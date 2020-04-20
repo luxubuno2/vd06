@@ -31,7 +31,7 @@ def api_filter():
 
 class Parameters(Resource):
     def get(self, firstParam):
-        return "Day la tam so " + firstParam
+        return "This is " + firstParam
 
 api = Api(app)
 api.add_resource(Parameters, '/parameters/<firstParam>') # Route_1
